@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  min-height: 12vh;
+  padding: 1.05vh;
+  display: flex;
+
+  border: 2px solid red;
+}
+
+header h1 {
+  text-decoration: underline;
+  font-size: 3em;
+  grid-column-start: 2;
+}
+
+header button {
+  margin-top: 1.5em;
+  margin-left: 2em;
+  width: 3em;
+  height: 3em;
+}
+
+.menuBar {
+  display: flex;
+}
+
+.menuBar p {
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+#menuBar {
+  list-style: none;
+}
+
+.navBar1,
+.navBar2 {
+  font-size: larger;
+}
+
+.newToDo {
+  padding-left: 1em;
+  padding-top: 0.5em;
+  min-height: 2em;
+  font-size: 1.5em;
+  border: 2px solid black;
+}
+
+.tasks {
+  min-height: 40em;
+}
+
+.hidden {
+  display: none;
+}

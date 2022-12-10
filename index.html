@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="icon" type="image" href="./images/icons8-sticky-notes-16.png">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
+    <title>To-Do-List</title>
+</head>
+<body> 
+    <header>
+        <h1><img src="./images/StickyNote32x32.png" alt="Sticky Note"> To-Do</h1>
+            <button id="menu" onclick="showMenu()"><img src="./images/icons8-menu-rounded-30.png" alt="Three Lines Signifying a menu."></button>
+           <div class="menuBar hidden">
+               <p>Tasks</p>
+               <p>Projects</p>
+           </div>
+    </header>
+    <main>
+        <div id="content">
+            <div class="newToDo">
+                <form onsubmit="event.preventDefault(); console.log('TEST');" id="newTaskForm"> 
+                        <label for="">New To Do:</label>
+                    <input type="text" placeholder="Title">
+                    <input type="text" placeholder="Description">
+                        <label for="checkbox">Urgent:</label>
+                    <input type="checkbox" name="checkbox">
+                    <input type="submit" value="New To-Do">
+                </form>
+            </div>
+            <div class="tasks">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Copyright 2022 <a href="https://github.com/SylasB" target="blank">Sylas Boniek 
+                <i class="devicon-github-original-wordmark colored"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
