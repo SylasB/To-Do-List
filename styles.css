@@ -6,17 +6,30 @@
   margin: 0;
 }
 
+body {
+  background-color: beige;
+}
+button {
+  border: none;
+  background-color: gold;
+}
+
+button:active {
+  background-color: yellow;
+  transform: scale(0.95);
+  border: 1px solid gold;
+}
+
 a {
   text-decoration: none;
   color: black;
 }
 
 header {
-  min-height: 12vh;
+  min-height: 10vh;
   padding: 1.05vh;
   display: flex;
-
-  border: 2px solid red;
+  background-color: burlywood;
 }
 
 header h1 {
@@ -41,8 +54,30 @@ header button {
   margin: 1em;
 }
 
+#menu {
+}
+
+#menu:hover {
+  transform: scale(1.05);
+}
+
 #menuBar {
   list-style: none;
+}
+
+.newTaskBTN {
+  display: flex;
+  justify-content: start;
+}
+
+#newTaskFormBTN {
+  font-weight: bold;
+  font-size: 1.3vh;
+  width: 6em;
+}
+
+#newTaskFormBTN:hover {
+  transform: scale(1.05);
 }
 
 .navBar1,
@@ -50,18 +85,159 @@ header button {
   font-size: larger;
 }
 
+#content {
+  min-width: 100vw;
+  min-height: 80vh;
+}
+
 .newToDo {
+  display: flex;
+  justify-content: center;
   padding-left: 1em;
   padding-top: 0.5em;
   min-height: 2em;
   font-size: 1.5em;
-  border: 2px solid black;
+}
+
+#newToDoLabel {
+  font-weight: bold;
+}
+
+#title,
+#description {
+  border: 2px solid gold;
+  height: 4vh;
+  font-size: large;
+}
+
+#formSubmitBTN {
+  height: 4vh;
+  width: 10vw;
+  font-size: medium;
+}
+
+#tasksHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  text-decoration: underline;
 }
 
 .tasks {
-  min-height: 40em;
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  column-gap: 1vw;
+  row-gap: 1vw;
+  justify-content: center;
+  padding: 1vw;
+}
+
+.tasks h2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5em;
+  text-decoration: underline;
+}
+
+.task {
+  padding: 1vw;
+  text-align: center;
+  min-height: 17vh;
+  border-radius: 1vw;
+  background-color: burlywood;
+  border: 1px solid blanchedalmond;
+}
+
+.taskTitle {
+  text-decoration: underline;
+  font-size: x-large;
+  padding: 2vw;
+}
+
+.urgentDiv {
+  position: relative;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.urgent {
+  font-size: large;
+  font-weight: bold;
+  padding: 1vw;
+  background-color: lightcoral;
+}
+
+.notUrgent {
+  font-size: large;
+  padding: 1vw;
+  background-color: lightgreen;
+}
+
+.completeBTN {
+  position: relative;
+  top: 1vh;
+  font-size: large;
+  margin: 1vw;
+  margin-top: -1vh;
+  padding: 1vw;
+}
+
+.newProjectDiv {
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  padding: 2vw;
+}
+
+.projectsTitle {
+  display: flex;
+  justify-content: center;
+  padding: 2vw;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  background-color: burlywood;
+  width: 33vw;
+  margin: 2vw;
+  padding: 2vw;
+  border-radius: 1vw;
+}
+
+.projectTitle {
+  text-decoration: underline;
+}
+
+.projectTask {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.completeProjectBTN {
+  border-radius: 0.5vw;
+  padding: 0.3vw;
+  height: 2vh;
+  font-size: medium;
 }
 
 .hidden {
   display: none;
+}
+
+.lineThrough {
+  text-decoration-line: line-through;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
 }
